@@ -1,0 +1,13 @@
+type Query {
+    getToDos: [ToDo]
+}
+
+type Mutation {
+    createToDo(title: String, description: String): ToDo
+}
+
+type ToDo {
+    id: ID
+    title: String
+    description: String
+}
